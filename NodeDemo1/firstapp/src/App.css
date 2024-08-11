@@ -1,0 +1,499 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.solar-epc-header {
+  background-color: #fff;
+ 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-right: 10;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  display: inline;
+ padding-right: 10px;
+  
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #000;
+   padding-left: 2px;
+}
+
+.shop-now {
+  background-color: midnightblue;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #f9f7f7;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: auto;
+  
+}
+
+.shop-now1 {
+  background-color: #2b94c8;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #f9f7f7;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 50px;
+  
+  
+}
+
+.solar-epc-main {
+  text-align: center;
+  padding: 0rem 0rem;
+  color:#fff
+  
+  
+}
+
+.hero {
+ 
+  background-size: cover;
+  background-position: center;
+  padding: 0% 0rem;
+  color: #efe9e9;
+  border-bottom:4px solid #fff;
+  border-top:4px solid #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #761076;
+}
+
+.enquire-now {
+  background-color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.intro {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  color: #000;
+  border-bottom:4px solid #000;
+}
+
+#intr{
+  border:rgb(196, 21, 132) ;
+  border-bottom:4px solid #fff;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #000;
+  
+}
+
+.solar-epc-footer {
+  padding: 1rem;
+  background-color: #ebe1e1;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+table, th, td {
+  border:0px;
+  padding :10px 50px;
+  color: white;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+/* LoginPage.css */
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+.form-control {
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 8px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.input-field {
+  position: relative;
+  width: 100%;
+}
+.input {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  height: 45px;
+  border: 1.5px solid #ecedec;
+  background: transparent;
+  padding-left: 10px;
+}
+.input:focus {
+  border: 1.5px solid #2d79f3;
+}
+.input-field .label {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+.input-field .input:focus ~ .label,
+.input-field .input:valid ~ .label {
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  color: #2d79f3;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.submit-btn {
+  margin-top: 30px;
+  height: 55px;
+  background: #f2f2f2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+  box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+.submit-btn:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+}
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* RegistrationForm.css */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+}
+
+.form-control {
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  height: 45px;
+  border: 1.5px solid #ecedec;
+  background: transparent;
+  padding-left: 10px;
+}
+
+.input:focus {
+  border: 1.5px solid #2d79f3;
+}
+
+.input-field .label {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.input-field .input:focus ~ .label,
+.input-field .input:valid ~ .label {
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  color: #2d79f3;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  height: 55px;
+  background: #f2f2f2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+  box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.text-body-secondary {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+#loginid:hover{
+    background-color: #3e8e41
+ }
+
+ #Regid:hover{
+  background-color: #3e8e41
+}
+
+#RegId1:hover{
+  background-color: #3e8e41
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+img{
+  aspect-ratio: 3/2;
+}
+
+.Adverties{
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+ 
+  
+}
+
+.Description h1,ul{
+
+  color: #000;
+  width: 50%;
+  margin-left: 100px;
+
+}
+
+.ProductPic img{
+  width: 80%;
+}
+
+.ProductPic1 img{
+  width: 100%;
+  height: 500px;
+  padding-right: 5rem;
+  
+}
+
+
+element.style {
+  background-color: #1d187d;
+  width: 100%;
+  height: 500px;
+  margin-top: 2em;
+}

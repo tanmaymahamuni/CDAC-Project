@@ -1,0 +1,60 @@
+CREATE TABLE Customer (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL,
+    customer_address VARCHAR(255),
+    customer_phone_number VARCHAR(15),
+    customer_email VARCHAR(100),
+    CONSTRAINT email_unique UNIQUE (customer_email)
+);
+
+CREATE TABLE Vendors (
+    vendor_id INT AUTO_INCREMENT PRIMARY KEY,
+    vendor_name VARCHAR(100) NOT NULL,
+    vendor_address VARCHAR(255),
+    vendor_phone_no VARCHAR(15),
+    company_name VARCHAR(100),
+    mobile VARCHAR(15),
+    email_id VARCHAR(100),
+    subscription_status BOOLEAN,
+    CONSTRAINT email_unique UNIQUE (email_id)
+);
+
+CREATE TABLE Request_Form (
+    request_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    request_details TEXT,
+    request_date DATE,
+    available_area_for_rooftop DECIMAL(10,2),
+    avg_monthly_electricity_consumption DECIMAL(10,2),
+    avg_monthly_electricity_bill DECIMAL(10,2),
+    property_type INT,  -- New column for property type
+    CONSTRAINT fk_customer_id FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
+);
+
+CREATE TABLE Quotation (
+    quotation_id INT AUTO_INCREMENT PRIMARY KEY,  -- More descriptive name for the primary key
+    request_id INT,  -- Foreign key referencing the Request_Form table
+    vendor_id INT,   -- Foreign key referencing the Vendors table
+    quotation_details TEXT,  -- Descriptive name for details of the quotation
+    quotation_amount DECIMAL(10,2),  -- Descriptive name for the amount of the quotation
+    quotation_date DATE,  -- Descriptive name for the date of the quotation
+    delivery_due_date DATE,  -- Descriptive name for the expected delivery date
+    CONSTRAINT fk_request_id FOREIGN KEY (request_id) REFERENCES Request_Form(request_id),
+    CONSTRAINT fk_vendor_id FOREIGN KEY (vendor_id) REFERENCES Vendors(vendor_id)
+);
+
+-- Create Order table with unique constraint names
+CREATE TABLE `Order` (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,  -- Primary key for the Order table
+    customer_id INT,  -- Foreign key referencing the Customers table
+    vendor_id INT,    -- Foreign key referencing the Vendors table
+    order_details TEXT,  -- Details about the order
+    order_amount DECIMAL(10,2),  -- Amount for the order
+    order_date DATE,  -- Date when the order was placed
+    payment_status VARCHAR(50),  -- Status of the payment (e.g., Paid, Pending)
+    request_id INT,  -- Foreign key referencing the Request_Form table
+    delivery_date DATE,  -- Expected delivery date for the order
+    CONSTRAINT fk_order_customer_id FOREIGN KEY (customer_id) REFERENCES Customer(customer_id),
+    CONSTRAINT fk_order_vendor_id FOREIGN KEY (vendor_id) REFERENCES Vendors(vendor_id),
+    CONSTRAINT fk_order_request_id FOREIGN KEY (request_id) REFERENCES Request_Form(request_id)
+);
